@@ -7,7 +7,7 @@ write activity on a website. People may still want to look at the website as a
 record of what happened, but they are less interested in contributing new
 content, since the project is, well, [finished].
 
-To keep a record of the project you can be stuck keeping the CMS software up to
+To keep the record of a project you are stuck keeping the CMS software up to
 date so it doesn't get hacked, and making sure the database is upgraded and
 backed up. As the Web gets older, this problem gets [worse].  Wouldn't it be
 nice to replace the once dynamic site with a static version that wouldn't
