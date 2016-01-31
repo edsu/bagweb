@@ -20,18 +20,28 @@ anything special, it's just a way of remembering a sequence of command-line
 interactions.
 
     % bagweb http://mith.umd.edu/api-workshop/ api-workshop
-    
-    time passes ...
 
-    % tree -L 2 apiworkshop
+    Crawling http://mith.umd.edu/apiworkshop/
+
+    Finished, see /Users/ed/Projects/bagweb/apiworkshop.log for details.
+
+    You may want to record additional provenance in
+    /Users/ed/Projects/bagweb/apiworkshop/bag-info.txt
+
+    % tree apiworkshop
     apiworkshop
     ├── bag-info.txt
     ├── bagit.txt
     ├── data
     │   ├── apiworkshop.warc.gz
-    │   └── mith.umd.edu
+    │   └── mith.umd.edu.tar.gz
     ├── manifest-md5.txt
     └── tagmanifest-md5.txt
+
+You can take this bag and put it somewhere where you like to keep track of data.
+Then you can scp the snapshot file, in this case
+`apiworkshop/data/mith.umd.edu.tar.gz` and unpack it in place of the previously
+installed CMS.
 
 CAVEAT: If the website being archived has a lot of dynamic AJAX stuff going on,
 the mirror copy may not be perfect, because wget doesn't execute JavaScript. But

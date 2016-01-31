@@ -5,24 +5,27 @@
 url=$1
 name=$2
 date=`date '+%Y-%m-%d'`
+working_dir=`pwd`
+bag_dir=$working_dir/$name
+log=$working_dir/$name.log
 
-echo "archiving $url"
-
-mkdir $name
-cd $name
-
-wget --warc-file $name --mirror --page-requisites --html-extension --convert-links --wait 1 --execute robots=off --no-parent $url
-
-cd ..
-
-bagit.py $name --external-description "wget capture of $url created by $USER on $date"
-
-warc="$name/data/$name.warc.gz"
-mirror=`ls -d $name/data/*/`
+mkdir $bag_dir
+cd $bag_dir
 
 echo
-echo "Finished crawling and bagging $url"
-echo "WARC file is at $warc"
-echo "Website mirror at $mirror"
-echo "You may want to record additional provenance in $name/bag-info.txt"
+echo "Crawling $url"
+wget --output-file $log --warc-file $name --mirror --page-requisites --html-extension --convert-links --wait 1 --execute robots=off --no-parent $url 2>/dev/null
+
+mirror_dir=`ls -d */`
+mirror_dir=${mirror_dir%/} # strip trailing slash
+tar cfz $mirror_dir.tar.gz $mirror_dir
+rm -rf $mirror_dir
+
+cd $working_dir
+bagit.py --log $log --external-description "wget capture of $url created by $USER on $date" $bag_dir
+
+echo
+echo "Finished, see $log for details."
+echo
+echo "You may want to record additional provenance in $bag_dir/bag-info.txt"
 echo
