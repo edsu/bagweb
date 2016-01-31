@@ -1,5 +1,5 @@
 Active projects need active websites, and this often means a CMS of 
-some kind (wordpress, mediawiki, drupal, etc). But projects end, and
+some kind (WordPress, MediaWiki, Drupal). But projects end, and so
 does the write activity on a website.
 
 To keep a record of the project you can be stuck keeping the CMS software up 
