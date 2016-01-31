@@ -10,7 +10,7 @@ content, since they project is, well, [finished].
 To keep a record of the project you can be stuck keeping the CMS software up to
 date so it doesn't get hacked, and making sure the database is upgraded and
 backed up. As the Web gets older, this problem gets [worse].  Wouldn't it be
-nice to replace the once dynamic site with a static version that wouldnt'
+nice to replace the once dynamic site with a static version that wouldn't
 require software updates of any kind?
 
 bagweb is a utility script for mirroring a website and writing the data into
