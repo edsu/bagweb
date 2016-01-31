@@ -1,3 +1,5 @@
+**Warning: this is kinda experimental**
+
 Active projects need active websites. An active website means we need content to
 change easily and quickly, and this often means installing a CMS of some kind
 (WordPress, MediaWiki, Drupal). But projects end, and so does the write activity
