@@ -13,11 +13,12 @@ backed up. As the Web gets older, this problem gets [worse].  Wouldn't it be
 nice to replace the once dynamic site with a static version that wouldn't
 require software updates of any kind?
 
-bagweb is a utility script for mirroring a website and writing the data into
-a [BagIt] package for your data archive. The heavy lifting is done by [wget]
-and [bagit.py] so you'll need to have those installed. bagweb really isn't
-anything special, it's just a way of remembering a sequence of command-line
-interactions.
+bagweb is a utility script for mirroring a website, creating a WARC file, and
+writing the data into a [BagIt] package for your data archive. The heavy lifting
+is done by [wget] and [bagit.py] so you'll need to have those installed.  bagweb
+really isn't anything special, it's just a way of remembering a sequence of
+command-line interactions, and perhaps a modest preservation pattern for the 
+Web.
 
     % bagweb http://mith.umd.edu/api-workshop/ api-workshop
 
