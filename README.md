@@ -2,10 +2,10 @@
 
 Active projects need active websites. An active website means we need content to
 change easily and quickly, and this often means installing a CMS of some kind
-(WordPress, MediaWiki, Drupal). But projects end, and so does the write activity
-on a website. People may still want to look at the website as a record of what
-happened, but they are less interested in contributing new content, since they
-project is finished.
+(WordPress, MediaWiki, Drupal, Rails, etc). But projects end, and so does the
+write activity on a website. People may still want to look at the website as a
+record of what happened, but they are less interested in contributing new
+content, since they project is finished.
 
 To keep a record of the project you can be stuck keeping the CMS software up to
 date so it doesn't get hacked, and making sure the database is upgraded and
