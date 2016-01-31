@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# TODO: make sure wget and bagit.py are installed
+
+url=$1
+name=$2
+date=`date '+%Y-%m-%d'`
+
+echo "archiving $url"
+
+mkdir $name
+cd $name
+
+wget --warc-file $name --mirror --page-requisites --html-extension --convert-links --wait 1 --execute robots=off --no-parent $url
+
+cd ..
+
+bagit.py $name --external-description "wget capture of $url created by $USER on $date"
+
+warc="$name/data/$name.warc.gz"
+mirror=`ls -d $name/data/*/`
+
+echo
+echo "Finished crawling and bagging $url"
+echo "WARC file is at $warc"
+echo "Website mirror at $mirror"
+echo "You may want to record additional provenance in $name/bag-info.txt"
+echo
