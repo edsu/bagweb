@@ -5,7 +5,7 @@ change easily and quickly, and this often means installing a CMS of some kind
 (WordPress, MediaWiki, Drupal, Rails, etc). But projects end, and so does the
 write activity on a website. People may still want to look at the website as a
 record of what happened, but they are less interested in contributing new
-content, since they project is finished.
+content, since they project is, well, [finished].
 
 To keep a record of the project you can be stuck keeping the CMS software up to
 date so it doesn't get hacked, and making sure the database is upgraded and
@@ -41,3 +41,4 @@ it may work good enough for you, considering the alternatives.
 [bagit.py]: https://github.com/libraryofcongress/bagit-python
 [wget]: https://www.gnu.org/software/wget/
 [worse]: http://www.newyorker.com/magazine/2015/01/26/cobweb
+[finished]: https://www.youtube.com/watch?v=4vuW6tQ0218
