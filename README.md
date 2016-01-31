@@ -11,7 +11,9 @@ that wouldnt' require software updates of any kind?
 
 bagweb is a utility script for mirroring a website and writing the data into
 a [bagit] package for your data archive. The heavy lifting is done by [wget]
-and [bagit.py] so you'll need to have those installed.
+and [bagit.py] so you'll need to have those installed. bagweb really isn't
+anything special, it's just a way of remembering a sequence of command-line
+interactions.
 
     % bagweb http://mith.umd.edu/api-workshop/ api-workshop
     
