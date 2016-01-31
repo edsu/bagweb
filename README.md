@@ -4,7 +4,7 @@ does the write activity on a website.
 
 To keep a record of the project you can be stuck keeping the CMS software up 
 to date so it doesn't get hacked, and making sure the database is upgraded 
-and backed up. As the Web gets older, this problem gets worse.
+and backed up. As the Web gets older, this problem gets [worse].
 
 Wouldn't it be nice to replace the once dynamic site with a static version
 that wouldnt' require software updates of any kind?
@@ -36,3 +36,4 @@ it may work good enough for you, considering the alternatives.
 [bagit]: https://en.wikipedia/wiki/BagIt
 [bagit.py]: https://github.com/libraryofcongress/bagit-python
 [wget]: https://www.gnu.org/software/wget/
+[worse]: http://www.newyorker.com/magazine/2015/01/26/cobweb
