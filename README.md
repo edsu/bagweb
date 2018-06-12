@@ -1,4 +1,4 @@
-# bagweb 👜🕸
+# bagweb <👜🕸>
 
 Active projects need active websites. An active website is one that can be
 updated quickly and easily, which often means installing a CMS of some kind
