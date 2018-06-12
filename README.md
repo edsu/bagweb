@@ -1,5 +1,3 @@
-**Warning: this is kinda experimental**
-
 Active projects need active websites. An active website is one that can be
 updated quickly and easily, which often means installing a CMS of some kind
 (WordPress, MediaWiki, Drupal, Rails, etc). But projects end, and so does the
