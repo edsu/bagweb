@@ -44,6 +44,13 @@ Then you can scp the snapshot file, in this case
 `apiworkshop/data/mith.umd.edu.tar.gz` and unpack it in place of the previously
 installed CMS.
 
+Follow these steps to test your website tarball:
+
+1. unzip mith.umd.edu.tar.gz 
+2. docker run -v `pwd`:/usr/local/apache2/htdocs -p 8080:80 httpd
+3. disconnect from the Internet (disable wifi, remove ethernet cable, etc)
+4. open http://localhost:8080/
+
 CAVEAT: If the website being archived has a lot of dynamic AJAX stuff going on,
 the mirror copy may not be perfect, because wget doesn't execute JavaScript. But
 it may work good enough for you, considering the alternatives.
