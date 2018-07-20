@@ -14,7 +14,11 @@ cd $bag_dir
 
 echo
 echo "Crawling $url"
-wget --output-file $log --warc-file $name --mirror --page-requisites --html-extension --convert-links --wait 1 --execute robots=off --no-parent $url 2>/dev/null
+wget --output-file $log --warc-file $name --warc-cdx --mirror --page-requisites --html-extension --convert-links --wait 1 --execute robots=off --no-parent $url 2>/dev/null
+
+if type "sf" > /dev/null 2>&1; then
+  sf -csv -hash sha1 -z $name.warc.gz > $name.csv
+fi
 
 mirror_dir=`ls -d */`
 mirror_dir=${mirror_dir%/} # strip trailing slash
