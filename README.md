@@ -55,7 +55,7 @@ CAVEAT: If the website being archived has a lot of dynamic AJAX stuff going on,
 the mirror copy may not be perfect, because wget doesn't execute JavaScript. But
 it may work good enough for you, considering the alternatives.
 
-[BagIt]: https://en.wikipedia/wiki/BagIt
+[BagIt]: https://en.wikipedia.org/wiki/BagIt
 [bagit.py]: https://github.com/libraryofcongress/bagit-python
 [wget]: https://www.gnu.org/software/wget/
 [worse]: http://www.newyorker.com/magazine/2015/01/26/cobweb
