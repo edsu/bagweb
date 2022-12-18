@@ -1,6 +1,15 @@
 #!/bin/bash
 
-# TODO: make sure wget and bagit.py are installed
+# make sure wget and bagit.py are installed
+command -v -- wget >/dev/null 2>&1 || {
+  echo "wget is required but is not installed. Aborting." >&2
+  exit 1
+}
+pip show -- bagit >/dev/null 2>&1 ||
+pip3 show -- bagit >/dev/null 2>&1 || {
+  echo "bagit.py is required but is not installed. Aborting." >&2
+  exit 1
+}
 
 url=$1
 name=$2
